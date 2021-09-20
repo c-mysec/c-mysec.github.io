@@ -15,11 +15,11 @@
         window.angularComponentReference.broadcastReceivedBase64(mip, mmsg);
       });  
     }
-    function wifiScanResult(result) {
+    function wifiScanResult(result, myCurrentSSID) {
       var mwifi = result;
       window.angularComponentReference.zone.run(() => {
         console.log("scanResult1: " + mwifi);
-        window.angularComponentReference.wifiScanResult(mwifi);
+        window.angularComponentReference.wifiScanResult(mwifi, myCurrentSSID);
       });  
     }
   </script>
@@ -30,6 +30,6 @@
 <body>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="runtime.a468f34e9bb03a191560.js" defer></script><script src="polyfills.a3e5501a4e356f032358.js" defer></script><script src="main.e79607f2ac05ffb8b8ea.js" defer></script>
+<script src="runtime.a468f34e9bb03a191560.js" defer></script><script src="polyfills.a3e5501a4e356f032358.js" defer></script><script src="main.ec2a2c8ccc0f1a11110e.js" defer></script>
 
 </body></html>
